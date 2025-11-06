@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* reset css */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+:root {
+  --bg-color: #191970;
+  --red: rgb(148, 50, 50);
+  --green: rgb(50, 148, 61);
+  --white: rgb(214, 197, 197);
+  --yellow: rgb(148, 140, 50);
+  --grey: rgb(109, 104, 110);
+  --purple: rgb(138, 50, 148);
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Inter", sans-serif;
+  color: whitesmoke;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.block {
+  margin: 1em 0;
+  padding: 1em 1em;
+  border-radius: 1em;
+}
+
+.block p {
+  margin: 0;
+}
+
+.red {
+  background-color: var(--red);
+}
+.green {
+  background-color: var(--green);
+}
+.yellow {
+  background-color: var(--yellow);
+}
+.purple {
+  background-color: var(--purple);
+}
+.white {
+  background-color: var(--white);
+  color: black;
+}
+.grey {
+  background-color: var(--grey);
+}
+
+button {
+  padding: 1em 3.5em;
+  border-radius: 2em;
+  border: none;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top-nav {
+  display: none;
+  align-items: start;
+  max-width: 20em;
+  padding: 0.8em;
+  margin: 0.5em;
+  background-color: #28282b;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 0.5s ease-in-out;
+}
+
+.top-nav i {
+  color: white;
+  padding: 0.5em;
+}
+
+.active {
+  display: block;
+}
+
+.burger-menu {
+  padding: 1em 2em;
+}
+
+.call-to-action {
+  background-color: #00a36c;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.start-guide-btn {
+  background-color: #966919;
+  color: white;
+}
+
+nav {
+  width: 100%;
+  text-align: left;
+}
+
+h1 {
+  font-size: 2.6em;
+  line-height: 1.3em;
+  margin: 0.5em 0;
+}
+
+.site-title {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1em;
+  align-items: center;
+}
+
+.site-title span {
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-align: right;
+}
+
+.container {
+  max-width: 30em;
+  margin: 0 auto;
+}
