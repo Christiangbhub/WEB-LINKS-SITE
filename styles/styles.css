@@ -108,14 +108,20 @@ body {
   background-color: var(--bg-color);
   font-family: "Inter", sans-serif;
   color: whitesmoke;
-  padding: 0.5em;
+  /* padding: 0.5em; */
+  margin: 0;
   text-align: center;
 }
 
 .block {
-  margin: 1em 0;
-  padding: 1em 1em;
+  padding: 1em;
+  padding-bottom: 5em;
   border-radius: 1em;
+}
+
+.block:hover {
+  cursor: pointer;
+  box-shadow: -5px 5px 2px  rgba(0, 0, 0, 0.466);
 }
 
 .block p {
@@ -166,9 +172,9 @@ a {
   max-width: 20em;
   padding: 0.5em;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  opacity: 0;
+  /* opacity: 0;
   transform: translateY(-10px);
-   transition: max-height 0.4s ease;
+   transition: max-height 0.4s ease; */
 
 }
 
@@ -184,8 +190,8 @@ a {
 
 .active {
   display: block;
-  opacity: 1;
-  transform: translateY(0);
+  /* opacity: 1;
+  transform: translateY(0); */
 }
 
 .burger-menu {
@@ -204,6 +210,20 @@ a {
   font-size: 1.5em;
   padding: .5em 1em;
   font-weight: bold;
+}
+
+.call-to-action:hover {
+  transform: scale(1.05);
+  transition: 100ms;
+  cursor: pointer;
+  box-shadow: -5px 5px 2px  rgba(0, 0, 0, 0.466);
+}
+
+.blocks {
+  padding: 1em;
+  display: grid;
+  gap: 2em;
+  grid-template-columns: 1fr;
 }
 
 
@@ -238,9 +258,14 @@ h1 {
   padding-right: 1em;
 }
 
+.hide-icon {
+  display: none;
+  color: red;
+}
+
 .container {
   max-width: 30em;
-  margin: 0 auto;
+  padding: 2em;
 }
 
 .intro-text {
@@ -255,6 +280,7 @@ h1 {
   padding: .5em 0;
   box-shadow: 2px 2px 2px rgba(22, 22, 22, 0.38);
   border-radius: 20rem;
+  border: 2px solid rgba(0, 0, 0, 0.503);
   margin: 1em 0;
 }
 
@@ -272,11 +298,9 @@ h1 {
 }
 
 
-@media (min-width: 25rem) {
+@media (min-width: 34rem) {
   .blocks {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2em;
   }
 
   body {
