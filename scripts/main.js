@@ -1,8 +1,14 @@
-var icon = document.querySelector(".burger-menu");
-var menu = document.querySelector(".top-nav");
+var burgerMenu = document.querySelector(".burger-menu");
+var bars = document.querySelectorAll(".bar");
+var navLinks = document.querySelector(".nav-links");
 
-icon.addEventListener("click", (e) => {
-  console.log(e);
+var container = document.querySelector(".container")
 
-  menu.classList.toggle("active");
-});
+
+
+burgerMenu.addEventListener("click", () => {
+  navLinks.classList.toggle("showNav");
+  container.classList.toggle("hideContent");
+  burgerMenu.classList.toggle("active");
+
+})
