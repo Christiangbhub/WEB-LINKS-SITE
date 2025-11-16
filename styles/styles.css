@@ -106,7 +106,7 @@ body {
   font-family: "Inter", sans-serif;
   color: whitesmoke;
   margin: 0;
-  padding: 10px;
+  padding: 20px;
 }
 
 .burger-menu {
@@ -252,7 +252,7 @@ ul li i {
 }
 
 .main-image img {
-  opacity: .5;
+  border-radius: 20px;
 }
 
 .quick-links {
@@ -312,6 +312,13 @@ ul li i {
   align-items: center;
 }
 
+.quick-links button {
+  cursor: pointer;
+}
+.quick-links button:hover{
+  box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.473);
+}
+
 .sub-headline {
   color: rgb(206, 194, 194);
 }
@@ -334,8 +341,49 @@ footer p {
 }
 
 
-.nav-desktop-links{
+  .back-to-top{
+    background-color: black;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    text-align: center;
+    position: fixed;
+    bottom: 22px;
+    right: 20px;
+    font-size: 2rem;
+    z-index: 222;
+  }
+
+
+
+
+/* Hide the dropdown menu by default */
+.ellipses-dropdown {
   display: none;
+  position: absolute;
+  top: 80px; /* adjust based on your nav height */
+  right: 20px;
+  background-color: var(--secondary);
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+
+/* Show when active */
+.ellipses-dropdown.active {
+  display: block;
+}
+
+.ellipses-dropdown .theme,
+.ellipses-dropdown .nav-items-icons {
+  margin-bottom: 10px;
+}
+
+.theme i {
+  margin: 0 10px;
 }
 
 
@@ -355,7 +403,7 @@ footer p {
 
 @media (min-width: 25rem) {
  .blocks {
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
  }
 
  
@@ -375,6 +423,7 @@ footer p {
   justify-content: center;
   align-items: center;
   text-align: left;
+  margin: 3em 0;
 }
 
 .hero-section-content h1 {
@@ -412,13 +461,14 @@ footer p {
 }
 
   
-  .burger-menu, .theme , .nav-items-icons{
+  .burger-menu{
   display: none;
  }
 
  nav {
+  cursor: pointer;
   display: grid;
-  grid-template-columns: 1fr .5fr 2fr;
+  grid-template-columns: 1fr .5fr 1fr;
   height: auto;
  }
 
@@ -436,12 +486,12 @@ footer p {
 
  .nav-links ul {
   display: flex;
-  justify-content: center;
+  justify-content: end;
  }
 
  .nav-links ul li {
   border-bottom: none;
-  margin: 0 1em;
+  margin: 0 2em;
  }
 
  .ellipses-menu {
