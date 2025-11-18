@@ -4,7 +4,7 @@ var navLinks = document.querySelector(".nav-links");
 var ellipsesMenu = document.querySelector(".ellipses-menu")
 var container = document.querySelector(".container")
 const dropdown = document.querySelector('.ellipses-dropdown');
-
+var linksATag = document.querySelector(".to-links-link")
 
 burgerMenu.addEventListener("click", () => {
   navLinks.classList.toggle("showNav");
