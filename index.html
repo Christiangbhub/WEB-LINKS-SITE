@@ -1,168 +1,196 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chris Weblinks</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
-  <body style="max-width: 1200px;">
-    <header>
-        <nav>
-          <div class="nav-logo">
-            <h3> <span class="space-out"><i class="fa-regular fa-copyright"></i></span>CGI WEBLINKS</h3>
-          </div>
-          <div class="search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-          <div class="burger-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-          <div class="nav-links">
-            <div class="nav-items">
-              <ul>
-                <a href="./index.html">
-                  <li>Home <i class="fa-solid fa-arrow-up-right-from-square"></i></li>
-                </a>
-                <a href="./about.html">
-                  <li>About <i class="fa-solid fa-arrow-up-right-from-square"></i></li>
-                </a>
-                <a href="./contact.html">
-                  <li>Contact <i class="fa-solid fa-arrow-up-right-from-square"></i></li>
-                </a>
-                <a class="to-links-link" href="#links-section">
-                  <li>Links <i class="fa-solid fa-arrow-up-right-from-square"></i></li>
-                </a>
-                <div class="ellipses-menu">
-                  <span class="dot"></span>
-                  <span class="dot"></span>
-                  <span class="dot"></span>
-                </div>
+  <body>
+    <header class="container-fluid bg-light">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">CGI WEBLINKS</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Links</a>
+                </li>
               </ul>
-            </div>
-
-            <div class="ellipses-dropdown">
-              <div class="theme">
-                <span>Theme</span>
-                <span><i class="fa-regular fa-moon"></i></span>
-              </div>
-              
-              <div class="nav-items-icons">
-                <a href="https://github.com/Christiangbhub" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.behance.net/chris_george" target="_blank"><i class="fa-brands fa-square-behance"></i></a>
-                <a href="https://discordapp.com/users/chris10dagam" target="_blank"><i class="fa-brands fa-discord"></i></a>
-              </div>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
             </div>
           </div>
-
         </nav>
-      </header>
+      </div>
+    </header>
+
     <div class="container">
-      
-      <main>
-        <div class="content">
-          <div class="hero-section">
-            <div class="main-image">
-              <img src="./logo.jpg" alt="" />
-            </div>
-            <div class="hero-section-content">
-              <h1>Personal Weblinks Site</h1>
-              <p class="intro-text"> A list of my favorite links for easy access 👌</p>
-              <div class="quick-links">
-                <a href="./tutorial.html"><button>Guide</button></a>
-                <a href="./resources.html"><button>Resources</button></a>
-                <a href="./about.html"><button>About</button></a>
-                <a href="./contact.html"><button>Support</button></a>
-              </div>
-               
+      <div class="content">
+        <div
+          class="hero-section d-flex flex-row-reverse justify-content-between my-5 align-items-center"
+        >
+          <div class="main-image">
+            <img class="img-fluid" src="./logo.jpg" alt="" />
+          </div>
+          <div class="hero-section-content">
+            <h1 class="display-1">Personal Weblinks Site</h1>
+            <p class="fs-4">A list of my favorite links for easy access 👌</p>
+            <div class="quick-links">
+              <a class="btn btn-primary fs-2" href="./tutorial.html">Guide</a>
+
+              <a class="btn btn-secondary fs-2" href="./resources.html"
+                >Resources</a
+              >
+
+              <a class="btn btn-secondary fs-2" href="./about.html">About</a>
+
+              <a class="btn btn-secondary fs-2" href="./contact.html"
+                >Support</a
+              >
             </div>
           </div>
-          <section id="links-section">
-            <p class="blocks-title">Or Explore various Categories <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span></p>
-            <section class="blocks">
-            
-              <div class="block red">
-                <div class="icon">
-                  <i class="fa-solid fa-shield"></i>
-                </div>
-                <p>Adblock</p>
-                <p>
-                  Tool for effectively blocking those annoying
-                  <abbr title="advertisments">ads</abbr> on your phone and pc, can
-                  be found here.
-                </p>
-              </div>
-              <div class="block green">
-                <div class="icon">
-                  <i class="fa-solid fa-mobile"></i>
-                </div>
-                <p>Favourite apps</p>
-                <p>
-                  A list of apps I love to use and they help me get through basic
-                  tasks.
-                </p>
-              </div>
-              <div class="block yellow">
-                <div class="icon">
-                  <i class="fa-solid fa-robot"></i>
-                </div>
-                <p>Favourite AI</p>
-                <p>
-                  A list of AI tools I use on daily basis. They help me to get
-                  things done and quick.
-                </p>
-              </div>
-              <div class="block purple">
-                <div class="icon">
-                  <i class="fa-solid fa-hashtag"></i>
-                </div>
-                <p>Useful Resources</p>
-                <p>
-                  A nice place for getting to know things that can help you do a
-                  variety of tasks on and off the web.
-                </p>
-              </div>
-              <div class="block grey">
-                <div class="icon">
-                  <i class="fa-solid fa-circle-user"></i>
-                </div>
-                <p>About Me</p>
-                <p>
-                  A nice section where you can learn all about me and what I do
-                  and aspire to
-                </p>
-              </div>
-              <div class="block white">
-                <div class="icon">
-                  <i class="fa-solid fa-globe"></i>
-                </div>
-                <p>Interesting sites</p>
-                <p>
-                  Just something I thought you might find Interesting and cool.
-                  Look closely.
-                </p>
-              </div>
-            </section>
-          </section>
         </div>
-      </main>
-      
+        <section id="links-section">
+          <p class="text-center display-4">Other Categories</p>
+          <section
+            class="d-flex gap-2 flex-wrap justify-content-between align-items-stretch"
+          >
+            <div
+              class="block bg-danger text-light fs-5 d-flex flex-column justify-content-start rounded-2 p-3"
+            >
+              <div class="icon">
+                <i class="fa-solid fa-shield"></i>
+              </div>
+              <p>Adblock</p>
+              <p>
+                Tool for effectively blocking those annoying
+                <abbr title="advertisments">ads</abbr> on your phone and pc, can
+                be found here.
+              </p>
+            </div>
+            <div
+              class="block bg-secondary text-light fs-5 d-flex flex-column justify-content-start rounded-2 p-3"
+            >
+              <div class="icon">
+                <i class="fa-solid fa-mobile"></i>
+              </div>
+              <p>Favourite apps</p>
+              <p>
+                A list of apps I love to use and they help me get through basic
+                tasks.
+              </p>
+            </div>
+            <div
+              class="block bg-secondary text-light fs-5 d-flex flex-column justify-content-start rounded-2 p-3"
+            >
+              <div class="icon">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+              <p>Favourite AI</p>
+              <p>
+                A list of AI tools I use on daily basis. They help me to get
+                things done and quick.
+              </p>
+            </div>
+            <div
+              class="block bg-secondary text-light fs-5 d-flex flex-column justify-content-start rounded-2 p-3"
+            >
+              <div class="icon">
+                <i class="fa-solid fa-hashtag"></i>
+              </div>
+              <p>Useful Resources</p>
+              <p>
+                A nice place for getting to know things that can help you do a
+                variety of tasks on and off the web.
+              </p>
+            </div>
+            <div
+              class="block bg-secondary text-light fs-5 d-flex flex-column justify-content-start rounded-2 p-3"
+            >
+              <div class="icon">
+                <i class="fa-solid fa-circle-user"></i>
+              </div>
+              <p>About Me</p>
+              <p>
+                A nice section where you can learn all about me and what I do
+                and aspire to
+              </p>
+            </div>
+            <div
+              class="block bg-secondary text-light fs-5 d-flex flex-column justify-content-start rounded-2 p-3"
+            >
+              <div class="icon">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <p>Interesting sites</p>
+              <p>
+                Just something I thought you might find Interesting and cool.
+                Look closely.
+              </p>
+            </div>
+          </section>
+        </section>
+      </div>
     </div>
     <div class="back-to-top">
       <i class="fa-solid fa-circle-arrow-up"></i>
     </div>
     <footer>
-        <p>
-          Proudly Made by <a href="#">Christian George</a> &copy; 2025
-        </p>
-      </footer>
+      <p>Proudly Made by <a href="#">Christian George</a> &copy; 2025</p>
+    </footer>
 
     <script
       src="https://kit.fontawesome.com/37a942cfcf.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./scripts/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
