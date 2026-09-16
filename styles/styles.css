@@ -1,6 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary: #142733;
+  --secondary: #81b5d6;
+  --accent: #5a6870;
+  --font-bold: 800;
+  --font-regular: 400;
+}
+
 * {
-  font-family: "Outfit", sans-serif;
+  font-family: "Inter Tight", sans-serif;
+  font-weight: var(--font-regular);
+  font-style: normal;
+  font-optical-sizing: auto;
 }
 body {
   min-height: 100vh;
@@ -40,4 +52,30 @@ main {
 .links:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+nav {
+  height: 50px;
+  color: gray;
+}
+
+nav ul {
+  list-style-type: none;
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+
+ul a {
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.8;
+}
+ul a:hover {
+  opacity: 1;
+}
+.logo {
+  font-weight: var(--font-bold);
+}
+li span {
+  height: 30px;
 }
