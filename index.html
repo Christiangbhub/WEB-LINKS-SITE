@@ -14,24 +14,54 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <header>
-      <nav
-        class="d-flex container-fluid align-items-center justify-content-center py-3 shadow-sm fs-4"
-      >
-        <div class="logo">WEBLINKS</div>
-        <div>
-          <ul
-            class="d-flex gap-4 align-items-center justify-content-center m-0"
-          >
-            <li>
-              <a href="./index.html">Home</a>
-            </li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./resources.html">Links</a></li>
-          </ul>
-        </div>
-      </nav>
+    <header class="container-fluid bg-light">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="d-flex justify-content-center align-items-center mx-auto">
+            <a class="navbar-brand" href="/WEB-LINKS-SITE/index.html"
+              >CGI WEBLINKS</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0 text">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="/WEB-LINKS-SITE/index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/WEB-LINKS-SITE/about.html"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/WEB-LINKS-SITE/contact.html"
+                    >Contact</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/WEB-LINKS-SITE/resources.html"
+                    >Links</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
       <div class="container">
@@ -59,16 +89,12 @@
           </div>
           <section id="links-section">
             <p class="text-center display-4">Other Categories</p>
-            <section
-              class="d-flex gap-2 flex-wrap justify-content-between align-items-stretch"
-            >
-              <div
-                class="block bg-danger text-light fs-5 d-flex flex-column justify-content-start rounded-2 p-3"
-              >
+            <section class="block-container gap-2">
+              <div class="block shadow fs-5 rounded-2 p-3">
                 <div class="icon">
                   <i class="fa-solid fa-shield"></i>
                 </div>
-                <p>Adblock</p>
+                <h2>Adblock</h2>
                 <p>
                   Tool for effectively blocking those annoying
                   <abbr title="advertisments">ads</abbr> on your phone and pc,
@@ -76,60 +102,60 @@
                 </p>
               </div>
               <div
-                class="block bg-secondary text-light fs-5 d-flex flex-column justify-content-start rounded-2 p-3"
+                class="block shadow fs-5 d-flex flex-column justify-content-start rounded-2 p-3"
               >
                 <div class="icon">
                   <i class="fa-solid fa-mobile"></i>
                 </div>
-                <p>Favourite apps</p>
+                <h2>Favourite apps</h2>
                 <p>
                   A list of apps I love to use and they help me get through
                   basic tasks.
                 </p>
               </div>
               <div
-                class="block bg-secondary text-light fs-5 d-flex flex-column justify-content-start rounded-2 p-3"
+                class="block shadow fs-5 d-flex flex-column justify-content-start rounded-2 p-3"
               >
                 <div class="icon">
                   <i class="fa-solid fa-robot"></i>
                 </div>
-                <p>Favourite AI</p>
+                <h2>Favourite AI</h2>
                 <p>
                   A list of AI tools I use on daily basis. They help me to get
                   things done and quick.
                 </p>
               </div>
               <div
-                class="block bg-secondary text-light fs-5 d-flex flex-column justify-content-start rounded-2 p-3"
+                class="block shadow fs-5 d-flex flex-column justify-content-start rounded-2 p-3"
               >
                 <div class="icon">
                   <i class="fa-solid fa-hashtag"></i>
                 </div>
-                <p>Useful Resources</p>
+                <h2>Useful Resources</h2>
                 <p>
                   A nice place for getting to know things that can help you do a
                   variety of tasks on and off the web.
                 </p>
               </div>
               <div
-                class="block bg-secondary text-light fs-5 d-flex flex-column justify-content-start rounded-2 p-3"
+                class="block shadow fs-5 d-flex flex-column justify-content-start rounded-2 p-3"
               >
                 <div class="icon">
                   <i class="fa-solid fa-circle-user"></i>
                 </div>
-                <p>About Me</p>
+                <h2>About Me</h2>
                 <p>
                   A nice section where you can learn all about me and what I do
                   and aspire to
                 </p>
               </div>
               <div
-                class="block bg-secondary text-light fs-5 d-flex flex-column justify-content-start rounded-2 p-3"
+                class="block shadow fs-5 d-flex flex-column justify-content-start rounded-2 p-3"
               >
                 <div class="icon">
                   <i class="fa-solid fa-globe"></i>
                 </div>
-                <p>Interesting sites</p>
+                <h2>Interesting sites</h2>
                 <p>
                   Just something I thought you might find Interesting and cool.
                   Look closely.

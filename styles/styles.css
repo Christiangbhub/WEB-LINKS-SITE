@@ -26,9 +26,11 @@ main {
 .main-image {
   width: 500px;
 }
-
+.block-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 .block {
-  width: 400px;
 }
 .about-image {
   max-width: 300px;
