@@ -8,6 +8,11 @@
   --font-regular: 400;
 }
 
+.primary_color {
+  background-color: var(--primary);
+  color: white;
+}
+
 * {
   font-family: "Inter Tight", sans-serif;
   font-weight: var(--font-regular);
@@ -24,17 +29,24 @@ main {
   flex: 1;
 }
 .main-image {
-  width: 500px;
+  /* width: 500px; */
 }
 .block-container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(3, 1fr);
 }
 .block {
+  background-color: #142733;
+  color: #eaf7ff;
+  opacity: 0.9;
 }
-.about-image {
-  max-width: 300px;
-  float: right;
+.block:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.about-image img {
+  margin: 0 auto;
+  max-width: 100%;
 }
 .link_container {
   min-height: 200px;
@@ -56,11 +68,6 @@ main {
   text-decoration: underline;
 }
 
-nav {
-  height: 50px;
-  color: gray;
-}
-
 nav ul {
   list-style-type: none;
   font-weight: 900;
@@ -80,4 +87,77 @@ ul a:hover {
 }
 li span {
   height: 30px;
+}
+h1 {
+  font-size: 5rem;
+}
+.hero-section {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-between;
+}
+.about_me {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 5px;
+}
+
+.grid2 > div {
+  border: 2px solid var(--primary);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.grid_span1 {
+  grid-column: 1 / span 2;
+}
+
+.lists li {
+  background-color: var(--primary);
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  list-style: none;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.text {
+  text-align: justify;
+}
+
+.active {
+  font-weight: 500;
+}
+
+@media (max-width: 800px) {
+  .block-container {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 1000px) {
+  .hero-section,
+  .about_me {
+    grid-template-columns: 1fr;
+  }
 }
