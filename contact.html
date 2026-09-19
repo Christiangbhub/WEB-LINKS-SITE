@@ -34,12 +34,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="/WEB-LINKS-SITE/index.html"
-                    >Home</a
-                  >
+                  <a class="nav-link" href="/WEB-LINKS-SITE/index.html">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/WEB-LINKS-SITE/about.html"
@@ -47,7 +42,10 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/WEB-LINKS-SITE/contact.html"
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="/WEB-LINKS-SITE/contact.html"
                     >Contact</a
                   >
                 </li>
@@ -62,54 +60,72 @@
         </nav>
       </div>
     </header>
-    <main class="container fs-5 d-flex flex-column gap-2 my-5">
-      <h1 class="serif-font">Welcome to Contact page</h1>
-      <p>Hello, My name is Christian George-Igbinidu</p>
-      <h2>CONTACT</h2>
-      <p>
-        If you’d like to reach out for collaborations, design work, school
-        projects, or development opportunities, I’d love to connect.
-      </p>
-      <strong>Email</strong>
-      <p>
-        <a href="mailto:christiangeorge602@gmail.com"
-          >christiangeorge602@gmail.com</a
-        >
-      </p>
-      <strong>GitHub</strong>
-      <p>
-        I share my development projects, experiments, and portfolio here:
-        <a href="https://github.com/Christiangbhub"
-          >github.com/Christiangbhub</a
-        >
-      </p>
-      <strong>Behance</strong>
-      <p>
-        View my graphic design work, practice projects, and layouts:
-        <a target="_blank" href="https://behance.net/chris_george"
-          >behance.net/chris_george</a
-        >
-      </p>
-      <h2>Projects</h2>
-      <p>
-        I have multiple live demo sites hosted on GitHub Pages including a
-        resume site, JS utilities, and practice layouts.
-      </p>
-      <h3>What you can contact me for</h3>
-      <ul>
-        <li>Web development projects (React, Next.js, Angular, JavaScript)</li>
-        <li>Java or Spring Boot backend work</li>
-        <li>Graphic design: flyers, posters, ads, branding</li>
-        <li>School collaborations or coding help</li>
-        <li>Creative work or volunteer design projects</li>
-        <li>Professional opportunities or internships</li>
-      </ul>
-      <h4>Availability</h4>
-      <p>
-        I’m currently open to part-time work, freelance design, small
-        development projects, and portfolio-building opportunities. Response
-        Time I try my best to respond within 24–48 hours.
-      </p>
+    <main class="container fs-5 my-5 fs-2 grid2">
+      <div>
+        <h1 class="serif-font">Welcome to Contact page</h1>
+        <p>Hello, My name is Christian George-Igbinidu</p>
+        <p>You can send me a message via this form below</p>
+        <form action="">
+          <label for="name">Name: </label>
+          <input type="text" name="name" />
+          <label for="message">Message</label>
+          <textarea name="message" id="message"></textarea>
+          <input type="submit" class="btn btn-success" />
+        </form>
+      </div>
+      <div>
+        <h2>CONTACT</h2>
+        <p>
+          If you’d like to reach out for collaborations, design work, school
+          projects, or development opportunities, I’d love to connect.
+        </p>
+        <strong>Email</strong>
+        <p>
+          <a href="mailto:christiangeorge602@gmail.com"
+            >christiangeorge602@gmail.com</a
+          >
+        </p>
+        <strong>GitHub</strong>
+        <p>
+          I share my development projects, experiments, and portfolio here:
+          <a href="https://github.com/Christiangbhub"
+            >github.com/Christiangbhub</a
+          >
+        </p>
+        <strong>Behance</strong>
+        <p>
+          View my graphic design work, practice projects, and layouts:
+          <a target="_blank" href="https://behance.net/chris_george"
+            >behance.net/chris_george</a
+          >
+        </p>
+      </div>
+      <div>
+        <h2>Projects</h2>
+        <p>
+          I have multiple live demo sites hosted on GitHub Pages including a
+          resume site, JS utilities, and practice layouts.
+        </p>
+        <h3>What you can contact me for</h3>
+        <ul>
+          <li>
+            Web development projects (React, Next.js, Angular, JavaScript)
+          </li>
+          <li>Java or Spring Boot backend work</li>
+          <li>Graphic design: flyers, posters, ads, branding</li>
+          <li>School collaborations or coding help</li>
+          <li>Creative work or volunteer design projects</li>
+          <li>Professional opportunities or internships</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Availability</h4>
+        <p>
+          I’m currently open to part-time work, freelance design, small
+          development projects, and portfolio-building opportunities. Response
+          Time I try my best to respond within 24–48 hours.
+        </p>
+      </div>
     </main>
 
     <footer class="container-fluid text-center bg-dark text-white p-2">
